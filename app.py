@@ -172,17 +172,20 @@ def get_groq_client():
     return Groq(api_key=api_key)
 
 
+GROQ_MODELS = [
+    "openai/gpt-oss-120b",
+    "openai/gpt-oss-20b",
+    "qwen/qwen3.8-27b",
+]
+
+
 def generate_answer(client, complaint, category, context_results):
+
     context_text = "\n\n".join(
         [
             f"[SOURCE: {item['source']}]\n{item['text']}"
             for item in context_results
         ]
-    )
-
-    model_name = os.getenv(
-        "GROQ_MODEL",
-        "llama-3.3-70b-versatile",
     )
 
     system_prompt = """
