@@ -1,0 +1,64 @@
+SAMPLE CUSTOMER COMPLAINT TROUBLESHOOTING KNOWLEDGE BASE
+
+DOCUMENT: SIM_ACTIVATION_SOP.txt
+
+Issue: SIM replacement completed but service is not active.
+
+Verification:
+1. Confirm the customer's mobile number.
+2. Verify that the SIM replacement transaction completed successfully.
+3. Check whether the new SIM/IMSI is correctly associated with the customer number.
+4. Check provisioning status in the approved provisioning system.
+5. Check for any pending or failed provisioning transaction.
+
+Resolution:
+1. If the replacement transaction is incomplete, follow the approved SIM replacement procedure.
+2. If provisioning is pending, follow the approved provisioning retry procedure.
+3. If provisioning failed, capture the transaction/reference ID and follow the failure-handling SOP.
+4. Do not manually change database records unless the approved SOP specifically authorizes the action.
+
+Validation:
+1. Confirm that the service status is active.
+2. Confirm that the customer can register on the network.
+3. Confirm that the expected services are available.
+4. Record the resolution in the approved ITSM/ticketing system.
+
+Escalation:
+Escalate to the provisioning/L2 support team if the transaction repeatedly fails, the required provisioning record is missing, or the issue cannot be resolved using the approved procedure.
+
+DOCUMENT: BILLING_SOP.txt
+
+Issue: Customer reports an unexpected charge.
+
+Verification:
+1. Confirm the mobile number/account.
+2. Identify the billing period and charge description.
+3. Check the approved billing system for the transaction or usage record.
+4. Compare the charge with the applicable product/package terms.
+
+Resolution:
+1. If the charge is valid, explain the charge using the approved customer communication.
+2. If the charge appears incorrect, raise the appropriate billing investigation request.
+3. Do not promise a refund unless the applicable policy confirms eligibility.
+
+Validation:
+Confirm that the complaint/ticket contains the investigation result and customer communication.
+
+Escalation:
+Escalate to the billing support team when the charge cannot be verified or requires a policy/financial decision.
+
+DOCUMENT: CRM_LOGIN_SOP.txt
+
+Issue: Team member cannot access the CRM application.
+
+Verification:
+1. Confirm the user ID and exact error message.
+2. Check whether the issue affects one user or multiple users.
+3. Confirm that the user is authorized for the application.
+4. Capture the time of occurrence and relevant error/reference information.
+
+Resolution:
+Follow the approved CRM access/password-reset procedure. Do not bypass authentication controls.
+
+Escalation:
+Escalate to the application/access-management team if the approved procedure does not resolve the issue.
